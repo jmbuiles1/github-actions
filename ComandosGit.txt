@@ -1,0 +1,28 @@
+git clone git@github.kyndryl.net:jmbuiles/myrepo.git
+git status
+git add tigre.txt
+vi .gitignore -> Ignorar archivos: Es posible usar el portal https://gitignore.io para generar .gitignore para lenguajes específicos
+git diff tigre.txt -> Ver diferencias en un archivo 
+git commit tigre.txt
+git push origin main -> Main es el nombre de la rama para subir
+git branch -> Ver ramas y en cual estoy parado
+git checkout -b feature/myfeature  -> Crea un nuevo branch si no existe (-b) sin el parametro me cambio a un branch diferente.
+git push origin feature/myfeature  -> Subir el cambio a la rama que acabo de crear
+git pull origin feature/myfeature  -> Para traer cambios del repositorio remoto a mi repo local
+
+
+mas economica de data guard
+Herramienta de monitoreo enfocado en EBS (tenian cloud control)
+
+
+
+ssh-keygen -t ed25519 -C "jmbuiles@ocean.ibm.com"
+vi ~/.ssh/config 
+
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+
+ssh-add -K ~/.ssh/id_ed25519
+pbcopy < ~/.ssh/id_ed25519.pub
